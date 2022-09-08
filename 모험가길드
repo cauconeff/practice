@@ -1,0 +1,7 @@
+k=list(map(int, input().split()))
+in_k=list(set(k))
+res=0
+tmp=0
+for i in in_k:
+    res+=(k.count(i)+tmp)//i
+    tmp=(k.count(i)+tmp)%i
